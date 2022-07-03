@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "fT0oJjASAVt7Bmum4NqnuqtwQxWIdopK/Sn5jhKexF93XIOzS9i32vdQP9pecJpKhX/tXU9vswTuFSk0GNLP3w==",
+  "success": true,
+  "projectFilePath": "C:\\dev\\UserManagerAPI\\JdevAPI\\src\\AuthApi\\AuthApi.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Jvito\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\Jvito\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\Jvito\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "C:\\Users\\Jvito\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "C:\\Users\\Jvito\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "C:\\Users\\Jvito\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}
