@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\dev\\UserManagerAPI\\JdevAPI\\src\\AuthApi\\AuthApi.Data\\AuthApi.Data.csproj",
+      "projectUniqueName": "C:\\dev\\UserManagerAPI\\JdevAPI\\src\\AuthApi.Data\\AuthApi.Data.csproj",
       "projectName": "AuthApi.Data",
-      "projectPath": "C:\\dev\\UserManagerAPI\\JdevAPI\\src\\AuthApi\\AuthApi.Data\\AuthApi.Data.csproj",
+      "projectPath": "C:\\dev\\UserManagerAPI\\JdevAPI\\src\\AuthApi.Data\\AuthApi.Data.csproj",
       "packagesPath": "C:\\Users\\Jvito\\.nuget\\packages\\",
-      "outputPath": "C:\\dev\\UserManagerAPI\\JdevAPI\\src\\AuthApi\\AuthApi.Data\\obj\\",
+      "outputPath": "C:\\dev\\UserManagerAPI\\JdevAPI\\src\\AuthApi.Data\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
