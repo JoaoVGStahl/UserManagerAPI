@@ -1,12 +1,21 @@
 ﻿using AuthApi.Domain.Entities;
+using AuthApi.Domain.Interfaces;
 using Microsoft.EntityFrameworkCore;
-
 
 namespace AuthApi.Data.Context
 {
-    public class GlobalContext : DbContext
+    public class GlobalContext : DbContext,IUnitOfWork
     {
+        public GlobalContext(DbContextOptions<GlobalContext> options) : base(options)
+        {
+
+        }
         public DbSet<Usuario>? Usuarios { get; set; }
+
+        public async Task<bool> Commit()
+        {
+            return await base.SaveChangesAsync() > 0;
+        }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

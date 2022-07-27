@@ -1,0 +1,14 @@
+C:\dev\UserManagerAPI\JdevAPI\src\AuthApi.Domain\bin\Debug\net6.0\AuthApi.Domain.deps.json
+C:\dev\UserManagerAPI\JdevAPI\src\AuthApi.Domain\bin\Debug\net6.0\AuthApi.Domain.runtimeconfig.json
+C:\dev\UserManagerAPI\JdevAPI\src\AuthApi.Domain\bin\Debug\net6.0\AuthApi.Domain.dll
+C:\dev\UserManagerAPI\JdevAPI\src\AuthApi.Domain\bin\Debug\net6.0\ref\AuthApi.Domain.dll
+C:\dev\UserManagerAPI\JdevAPI\src\AuthApi.Domain\bin\Debug\net6.0\AuthApi.Domain.pdb
+C:\dev\UserManagerAPI\JdevAPI\src\AuthApi.Domain\obj\Debug\net6.0\AuthApi.Domain.csproj.AssemblyReference.cache
+C:\dev\UserManagerAPI\JdevAPI\src\AuthApi.Domain\obj\Debug\net6.0\AuthApi.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\dev\UserManagerAPI\JdevAPI\src\AuthApi.Domain\obj\Debug\net6.0\AuthApi.Domain.AssemblyInfoInputs.cache
+C:\dev\UserManagerAPI\JdevAPI\src\AuthApi.Domain\obj\Debug\net6.0\AuthApi.Domain.AssemblyInfo.cs
+C:\dev\UserManagerAPI\JdevAPI\src\AuthApi.Domain\obj\Debug\net6.0\AuthApi.Domain.csproj.CoreCompileInputs.cache
+C:\dev\UserManagerAPI\JdevAPI\src\AuthApi.Domain\obj\Debug\net6.0\AuthApi.Domain.dll
+C:\dev\UserManagerAPI\JdevAPI\src\AuthApi.Domain\obj\Debug\net6.0\ref\AuthApi.Domain.dll
+C:\dev\UserManagerAPI\JdevAPI\src\AuthApi.Domain\obj\Debug\net6.0\AuthApi.Domain.pdb
+C:\dev\UserManagerAPI\JdevAPI\src\AuthApi.Domain\obj\Debug\net6.0\AuthApi.Domain.genruntimeconfig.cache

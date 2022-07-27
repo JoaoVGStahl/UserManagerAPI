@@ -14,7 +14,9 @@ namespace AuthApi.Data.Mappings
             builder.Property(p => p.Nome).HasColumnType("varchar(64)").IsRequired();
             builder.Property(p => p.Senha).HasColumnType("varchar(32)").IsRequired();
             builder.Property(p => p.Email).HasColumnType("varchar(100)").IsRequired();
-            builder.Property(p => p.Apagado).HasColumnType("bit(1)").HasDefaultValue("0").IsRequired();
+            builder.Property(p => p.Apagado).HasColumnType("bit(1)").HasDefaultValue(false).IsRequired();
+
+            builder.HasIndex(i => i.Email).IsUnique();
         }
     }
 }

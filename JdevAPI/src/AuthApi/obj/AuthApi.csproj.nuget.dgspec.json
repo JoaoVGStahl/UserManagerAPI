@@ -4,14 +4,101 @@
     "C:\\dev\\UserManagerAPI\\JdevAPI\\src\\AuthApi\\AuthApi.csproj": {}
   },
   "projects": {
-    "C:\\dev\\UserManagerAPI\\JdevAPI\\src\\AuthApi\\AuthApi.csproj": {
+    "C:\\dev\\UserManagerAPI\\JdevAPI\\src\\AuthApi.Data\\AuthApi.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\dev\\UserManagerAPI\\JdevAPI\\src\\AuthApi\\AuthApi.csproj",
-        "projectName": "AuthApi",
-        "projectPath": "C:\\dev\\UserManagerAPI\\JdevAPI\\src\\AuthApi\\AuthApi.csproj",
+        "projectUniqueName": "C:\\dev\\UserManagerAPI\\JdevAPI\\src\\AuthApi.Data\\AuthApi.Data.csproj",
+        "projectName": "AuthApi.Data",
+        "projectPath": "C:\\dev\\UserManagerAPI\\JdevAPI\\src\\AuthApi.Data\\AuthApi.Data.csproj",
         "packagesPath": "C:\\Users\\Jvito\\.nuget\\packages\\",
-        "outputPath": "C:\\dev\\UserManagerAPI\\JdevAPI\\src\\AuthApi\\obj\\",
+        "outputPath": "C:\\dev\\UserManagerAPI\\JdevAPI\\src\\AuthApi.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Jvito\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\dev\\UserManagerAPI\\JdevAPI\\src\\AuthApi.Domain\\AuthApi.Domain.csproj": {
+                "projectPath": "C:\\dev\\UserManagerAPI\\JdevAPI\\src\\AuthApi.Domain\\AuthApi.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[6.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.7, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.107\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\dev\\UserManagerAPI\\JdevAPI\\src\\AuthApi.Domain\\AuthApi.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\dev\\UserManagerAPI\\JdevAPI\\src\\AuthApi.Domain\\AuthApi.Domain.csproj",
+        "projectName": "AuthApi.Domain",
+        "projectPath": "C:\\dev\\UserManagerAPI\\JdevAPI\\src\\AuthApi.Domain\\AuthApi.Domain.csproj",
+        "packagesPath": "C:\\Users\\Jvito\\.nuget\\packages\\",
+        "outputPath": "C:\\dev\\UserManagerAPI\\JdevAPI\\src\\AuthApi.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -43,6 +130,93 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.7, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.107\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\dev\\UserManagerAPI\\JdevAPI\\src\\AuthApi\\AuthApi.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\dev\\UserManagerAPI\\JdevAPI\\src\\AuthApi\\AuthApi.csproj",
+        "projectName": "AuthApi",
+        "projectPath": "C:\\dev\\UserManagerAPI\\JdevAPI\\src\\AuthApi\\AuthApi.csproj",
+        "packagesPath": "C:\\Users\\Jvito\\.nuget\\packages\\",
+        "outputPath": "C:\\dev\\UserManagerAPI\\JdevAPI\\src\\AuthApi\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Jvito\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\dev\\UserManagerAPI\\JdevAPI\\src\\AuthApi.Data\\AuthApi.Data.csproj": {
+                "projectPath": "C:\\dev\\UserManagerAPI\\JdevAPI\\src\\AuthApi.Data\\AuthApi.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.7, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[6.0.2, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"
