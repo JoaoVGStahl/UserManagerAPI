@@ -1,5 +1,26 @@
 {
   "Version": 1,
-  "ProjectMap": {},
-  "NextColorIndex": 0
+  "ProjectMap": {
+    "41ab91a1-0e90-41db-91f3-48eef98fa4b3": {
+      "ProjectGuid": "41ab91a1-0e90-41db-91f3-48eef98fa4b3",
+      "DisplayName": "AuthApi",
+      "ColorIndex": 0
+    },
+    "9b780772-aa8f-4522-9c1d-29969acd0230": {
+      "ProjectGuid": "9b780772-aa8f-4522-9c1d-29969acd0230",
+      "DisplayName": "AuthApi.Data",
+      "ColorIndex": 1
+    },
+    "8478c64f-4008-4766-9476-2a1135293dc6": {
+      "ProjectGuid": "8478c64f-4008-4766-9476-2a1135293dc6",
+      "DisplayName": "AuthApi.Domain",
+      "ColorIndex": 2
+    },
+    "f7ba312e-ea48-4c3a-9cbb-9129fcd1dc4c": {
+      "ProjectGuid": "f7ba312e-ea48-4c3a-9cbb-9129fcd1dc4c",
+      "DisplayName": "AuthApi.Data",
+      "ColorIndex": 3
+    }
+  },
+  "NextColorIndex": 4
 }

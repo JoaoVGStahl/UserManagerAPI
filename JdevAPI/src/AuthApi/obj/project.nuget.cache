@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "fT0oJjASAVt7Bmum4NqnuqtwQxWIdopK/Sn5jhKexF93XIOzS9i32vdQP9pecJpKhX/tXU9vswTuFSk0GNLP3w==",
+  "dgSpecHash": "ReYkLH2RxcCCwBTfcn5M+JK7SUxQk57KGCiIfRv9Ab9DLgzcOe6ztKrMm1A3Ne3FyqNbUy2xD5Iwp1O7bYbZOA==",
   "success": true,
   "projectFilePath": "C:\\dev\\UserManagerAPI\\JdevAPI\\src\\AuthApi\\AuthApi.csproj",
   "expectedPackageFiles": [
