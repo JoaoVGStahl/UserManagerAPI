@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "XmYFYTI6Ala4+ACdlrgQuz6Yw5+g2P5twm8NUifV/zjTA2T/fF6v/u4ldA7eckasChFysWJGa99QVcUM4mzkdA==",
+  "dgSpecHash": "EVQyPLUIfAiBAU5Se8vdIIwEFFeB/gZcAPzf6PMmeL5ShZnqwxWwoNIf5fHLDcPxIv8KcFMTKa5VHObOBXlxMg==",
   "success": true,
   "projectFilePath": "C:\\dev\\UserManagerAPI\\JdevAPI\\src\\AuthApi.Domain\\AuthApi.Domain.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Jvito\\.nuget\\packages\\fluentvalidation\\11.1.0\\fluentvalidation.11.1.0.nupkg.sha512",
     "C:\\Users\\Jvito\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Jvito\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.7\\microsoft.entityframeworkcore.6.0.7.nupkg.sha512",
     "C:\\Users\\Jvito\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.7\\microsoft.entityframeworkcore.abstractions.6.0.7.nupkg.sha512",

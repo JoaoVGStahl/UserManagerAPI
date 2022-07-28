@@ -1,5 +1,4 @@
-﻿
-namespace AuthApi.Domain.Interfaces
+﻿namespace AuthApi.Domain.Interfaces.Repository
 {
     public interface IRepository<T> : IDisposable
     {

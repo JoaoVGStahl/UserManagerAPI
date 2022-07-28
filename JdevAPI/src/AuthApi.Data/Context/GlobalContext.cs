@@ -6,10 +6,7 @@ namespace AuthApi.Data.Context
 {
     public class GlobalContext : DbContext,IUnitOfWork
     {
-        public GlobalContext(DbContextOptions<GlobalContext> options) : base(options)
-        {
-
-        }
+        public GlobalContext(DbContextOptions<GlobalContext> options) : base(options) { }
         public DbSet<Usuario>? Usuarios { get; set; }
 
         public async Task<bool> Commit()

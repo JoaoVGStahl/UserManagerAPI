@@ -1,6 +1,6 @@
 ﻿using AuthApi.Domain.Entities;
 
-namespace AuthApi.Domain.Interfaces
+namespace AuthApi.Domain.Interfaces.Repository
 {
     public interface IUsuarioRepository : IRepository<Usuario>
     {

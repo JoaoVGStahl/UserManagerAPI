@@ -1,6 +1,7 @@
 ﻿using AuthApi.Data.Context;
 using AuthApi.Domain.Entities;
 using AuthApi.Domain.Interfaces;
+using AuthApi.Domain.Interfaces.Repository;
 using System.Data.Entity;
 
 namespace AuthApi.Data.Repository
