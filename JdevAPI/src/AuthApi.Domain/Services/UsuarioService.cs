@@ -2,13 +2,15 @@
 using AuthApi.Domain.Interfaces.Repository;
 using AuthApi.Domain.Interfaces.Services;
 using AuthApi.Domain.Notificacoes;
+using AuthApi.Domain.Validacoes;
 
 namespace AuthApi.Domain.Services
 {
     public class UsuarioService : BaseService, IUsuarioService
     {
         private IUsuarioRepository _repository { get; set; }
-        public UsuarioService(IUsuarioRepository repository, INotificacaoService notificacaoService) : base(notificacaoService)
+        public UsuarioService(IUsuarioRepository repository, 
+                              INotificacaoService notificacaoService) : base(notificacaoService)
         {
             _repository = repository;
         }
@@ -20,15 +22,21 @@ namespace AuthApi.Domain.Services
 
         public async Task<Usuario> AdicionarUsuario(Usuario usuario)
         {
-            var usuarioExiste = await _repository.ObterUsuarioPorEmail(usuario.Email);
+            if(Validar(new UsuarioValidation(), usuario))
+            {
+                Notificar(UsuarioNotificacoes.UsuarioInválido);
+                return null;
+            }
 
-            //TODO HashMd5
+            var usuarioExiste = await _repository.ObterUsuarioPorEmail(usuario.Email);
 
             if (usuarioExiste != null)
             {
                 Notificar(UsuarioNotificacoes.EmailJaCadastrado);
                 return null;
             }
+
+            //TODO HashMd5
 
             usuario.DataCadastro = DateTime.Now;
 
@@ -45,6 +53,12 @@ namespace AuthApi.Domain.Services
 
         public async Task<Usuario> ApagarUsuario(Usuario usuario)
         {
+            if (Validar(new UsuarioValidation(), usuario))
+            {
+                Notificar(UsuarioNotificacoes.UsuarioInválido);
+                return null;
+            }
+
             var usuarioBanco = await _repository.ObterUsuarioPorId(usuario.Id);
 
             if (usuarioBanco == null)
@@ -68,6 +82,12 @@ namespace AuthApi.Domain.Services
 
         public async Task<Usuario> EditarUsuario(Usuario usuario)
         {
+            if (Validar(new UsuarioValidation(), usuario))
+            {
+                Notificar(UsuarioNotificacoes.UsuarioInválido);
+                return null;
+            }
+
             var antigoUsuario = await _repository.ObterUsuarioPorId(usuario.Id);
 
             if (antigoUsuario == null)

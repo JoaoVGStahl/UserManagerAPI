@@ -6,7 +6,7 @@ using System.Data.Entity;
 
 namespace AuthApi.Data.Repository
 {
-    internal class UsuarioRepository : IUsuarioRepository
+    public class UsuarioRepository : IUsuarioRepository
     {
         public IUnitOfWork UnitOfWork => _context;
         private readonly GlobalContext _context;

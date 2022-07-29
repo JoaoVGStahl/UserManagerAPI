@@ -9,6 +9,6 @@
         public const string ErroEditar = "Erro ao editar usuário, verifique e tente novamente!";
         public const string ErroApagar = "Erro ao apagar usuário, verifique e tente novamente!";
         public const string EmailJaCadastrado = "Este email já foi cadastrado para outro usuário!";
-
+        public const string UsuarioInválido = "Informações fornecidas são inválidas";
     }
 }

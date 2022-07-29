@@ -1,7 +1,9 @@
 ﻿using AuthApi.Data.Context;
-using Microsoft.AspNetCore.Mvc.Authorization;
+using AuthApi.Data.Repository;
+using AuthApi.Domain.Interfaces.Repository;
+using AuthApi.Domain.Interfaces.Services;
+using AuthApi.Domain.Services;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
 using Microsoft.OpenApi.Models;
 using System.Text.Json.Serialization;
 
@@ -40,6 +42,13 @@ namespace AuthApi.Configurantions
             {
                 opt.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)).UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking);
             });
+        }
+
+        public static void ResolveServices(this IServiceCollection services)
+        {
+            services.AddScoped<IUsuarioRepository, UsuarioRepository>();
+            services.AddScoped<IUsuarioService, UsuarioService>();
+            services.AddScoped<INotificacaoService, NotificacaoService>();
         }
     }
 }
