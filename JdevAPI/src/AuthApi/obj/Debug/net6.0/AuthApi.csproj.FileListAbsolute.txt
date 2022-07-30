@@ -57,3 +57,9 @@ C:\dev\UserManagerAPI\JdevAPI\src\AuthApi\bin\Debug\net6.0\AuthApi.Data.dll
 C:\dev\UserManagerAPI\JdevAPI\src\AuthApi\bin\Debug\net6.0\AuthApi.Domain.dll
 C:\dev\UserManagerAPI\JdevAPI\src\AuthApi\bin\Debug\net6.0\AuthApi.Data.pdb
 C:\dev\UserManagerAPI\JdevAPI\src\AuthApi\bin\Debug\net6.0\AuthApi.Domain.pdb
+C:\dev\UserManagerAPI\JdevAPI\src\AuthApi\bin\Debug\net6.0\FluentValidation.dll
+C:\dev\UserManagerAPI\JdevAPI\src\AuthApi\bin\Debug\net6.0\Microsoft.DotNet.PlatformAbstractions.dll
+C:\dev\UserManagerAPI\JdevAPI\src\AuthApi\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+C:\dev\UserManagerAPI\JdevAPI\src\AuthApi\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\dev\UserManagerAPI\JdevAPI\src\AuthApi\bin\Debug\net6.0\AutoMapper.dll
+C:\dev\UserManagerAPI\JdevAPI\src\AuthApi\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

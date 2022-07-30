@@ -3,13 +3,15 @@ using AuthApi.Domain.Interfaces.Repository;
 using AuthApi.Domain.Interfaces.Services;
 using AuthApi.Domain.Notificacoes;
 using AuthApi.Domain.Validacoes;
+using System.Security.Cryptography;
+using System.Text;
 
 namespace AuthApi.Domain.Services
 {
     public class UsuarioService : BaseService, IUsuarioService
     {
         private IUsuarioRepository _repository { get; set; }
-        public UsuarioService(IUsuarioRepository repository, 
+        public UsuarioService(IUsuarioRepository repository,
                               INotificacaoService notificacaoService) : base(notificacaoService)
         {
             _repository = repository;
@@ -20,9 +22,18 @@ namespace AuthApi.Domain.Services
             _repository?.Dispose();
         }
 
-        public async Task<Usuario> AdicionarUsuario(Usuario usuario)
+        public static string CriarHashMD5(string input)
         {
-            if(Validar(new UsuarioValidation(), usuario))
+            using MD5 mds = MD5.Create();
+            byte[] entradaBytes = Encoding.ASCII.GetBytes(input);
+            byte[] hashBytes = mds.ComputeHash(entradaBytes);
+
+            return Convert.ToHexString(hashBytes);
+        }
+
+        public async Task<string> AdicionarUsuario(Usuario usuario)
+        {
+            if (!Validar(new UsuarioValidation(), usuario))
             {
                 Notificar(UsuarioNotificacoes.UsuarioInválido);
                 return null;
@@ -36,7 +47,7 @@ namespace AuthApi.Domain.Services
                 return null;
             }
 
-            //TODO HashMd5
+            usuario.Senha = CriarHashMD5(usuario.Senha);
 
             usuario.DataCadastro = DateTime.Now;
 
@@ -48,7 +59,7 @@ namespace AuthApi.Domain.Services
                 return null;
             }
 
-            return usuario;
+            return usuario.Id.ToString();
         }
 
         public async Task<Usuario> ApagarUsuario(Usuario usuario)

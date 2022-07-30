@@ -2,7 +2,7 @@
 using AuthApi.Domain.Entities;
 using AuthApi.Domain.Interfaces;
 using AuthApi.Domain.Interfaces.Repository;
-using System.Data.Entity;
+using Microsoft.EntityFrameworkCore;
 
 namespace AuthApi.Data.Repository
 {
@@ -33,12 +33,12 @@ namespace AuthApi.Data.Repository
 
         public async Task<List<Usuario>> ObterTodosUsuarios()
         {
-            return await _context.Usuarios.ToListAsync();
+            return await _context.Usuarios.Where(p => !p.Apagado).ToListAsync();
         }
 
         public async Task<Usuario> ObterUsuarioPorEmail(string email)
         {
-            return await _context.Usuarios.Where(p => p.Email == email).FirstOrDefaultAsync();
+            return await _context.Usuarios.Where(p => !p.Apagado && p.Email == email).FirstOrDefaultAsync();
         }
 
         public async Task<Usuario> ObterUsuarioPorId(Guid id)
